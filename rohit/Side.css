@@ -1,0 +1,82 @@
+.body {
+    background-color: lightblue;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.side {
+    /* left: 0; */
+    height: 100vh;
+    width: 0px;
+    overflow-x: hidden;
+    background-color: aquamarine;
+    transition: 0.9s;
+
+}
+
+li {
+    color: red;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: clamp(2rem, 2.8vw, 5rem);
+    font-family: Raleway;
+    font-weight: bold;
+  }
+  
+  .typewriter {
+      width: 21.5ch;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid #212121;
+      animation: cursor 1s step-start infinite, 
+      text 5s steps(18) alternate infinite;
+  }
+  
+  @keyframes cursor {
+      0%, 100% { 
+      border-color: #212121; 
+    }
+  }
+  
+  @keyframes text {
+      0% { 
+      width: 0; 
+    }
+      100% { 
+      width: 21.5ch; 
+    }
+  }
+
+
+
+
+
+@media(min-width:990px) and (max-width:1440px) {
+    .side {
+        display: none !important;
+
+    }
+}
+/* @media(min-width:580px) and (max-width:990px) {
+    .side {
+      transition: 0.9s !important;
+    }
+} */
+
+
+.boxx{
+  padding: 10px;
+  background-color: aqua;
+  border: 1px solid #09203a;
+  width: 80%;
+  /* transition: ease-in-out 0.3s; */
+}
